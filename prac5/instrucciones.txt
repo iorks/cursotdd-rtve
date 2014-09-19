@@ -1,0 +1,12 @@
+Para sublime instalar el package de cucumber.
+Lo primero es instalarse el package manager de sublime:
+	https://sublime.wbond.net/installation
+Luego, instalar el package cucumber.
+
+instalar cucumber con:
+	npm install -g cucumber
+	
+instalar quinit:
+	npm install -g qunit
+	https://github.com/jquery/qunit
+	
