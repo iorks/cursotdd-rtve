@@ -50,7 +50,7 @@ public class JuegoVidaTests {
         juego.initMatriz(10, 10);
         
         Celula c1 = juego.getCelula(3, 3);
-        Celula c2 = juego.getCelula(1, 3);
+        Celula c2 = juego.getCelula(2, 3);
         
         assertTrue(juego.esVecino(c1,c2));
     }

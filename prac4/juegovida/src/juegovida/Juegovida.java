@@ -26,7 +26,7 @@ public class Juegovida {
         this.matriz = new Celula[dimX][dimY];
         for (int i=0; i<dimX; i++)
             for (int j=0; j<dimY; j++)
-                this.matriz[i][j] = new Celula(i,j);  // inicialmete todas muertas
+                this.matriz[i][j] = new Celula(i,j);
     }
     
     public Celula getCelula(int posX, int posY){
@@ -41,18 +41,21 @@ public class Juegovida {
                 return true;
             }
         }
+        // vecino por la derecha
         if (posibleVecino.getPosX()-1 == central.getPosX()){
             if ( (posibleVecino.getPosY() <= central.getPosY() +1) &&
                  (posibleVecino.getPosY() >= central.getPosY() -1) ){
                 return true;
             }
         }
+        // vecino por arriba
         if (posibleVecino.getPosY()+1 == central.getPosY()){
             if ( (posibleVecino.getPosX() <= central.getPosX() +1) &&
                  (posibleVecino.getPosX() >= central.getPosX() -1) ){
                 return true;
             }
         }
+        // vecino por abajo
         if (posibleVecino.getPosY()-1 == central.getPosY()){
             if ( (posibleVecino.getPosX() <= central.getPosX() +1) &&
                  (posibleVecino.getPosX() >= central.getPosX() -1) ){
